@@ -1,0 +1,13 @@
+{
+  "appId": "achapin.wastelandworkshop",
+  "appName": "Wasteland Workshop",
+  "backgroundColor": "#284181",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }  
+}
