@@ -47,35 +47,35 @@ function loadURL(url){
 function upgradesLoaded(json)
 {
 	upgrades = json;
-	var bosLoadPromise = loadURL("data/brotherhood_of_steel.json");
+	var bosLoadPromise = loadURL("assets/data/brotherhood_of_steel.json");
 	bosLoadPromise.then(bosLoaded);
 	bosLoadPromise.catch(function(){alert("bos load failed");});
 }
 
 function bosLoaded(json){
 	bos = json;
-	var raiderLoadPromise = loadURL("data/raiders.json");
+	var raiderLoadPromise = loadURL("assets/data/raiders.json");
 	raiderLoadPromise.then(raidersLoaded);
 	raiderLoadPromise.catch(function(){alert("raider load failed");});
 }
 
 function raidersLoaded(json){
 	raiders = json;	
-	var survivorLoadPromise = loadURL("data/survivors.json");
+	var survivorLoadPromise = loadURL("assets/data/survivors.json");
 	survivorLoadPromise.then(survivorsLoaded);
 	survivorLoadPromise.catch(function(){alert("survivor load failed");});
 }
 
 function survivorsLoaded(json){
 	survivors = json;
-	var mutantLoadPromise = loadURL("data/super_mutants.json");
+	var mutantLoadPromise = loadURL("assets/data/super_mutants.json");
 	mutantLoadPromise.then(mutantsLoaded);
 	mutantLoadPromise.catch(function(){alert("mutants load failed");});
 }
 
 function mutantsLoaded(json){
 	mutants = json;
-	var settlementLoadPromise = loadURL("data/settlement.json");
+	var settlementLoadPromise = loadURL("assets/data/settlement.json");
 	settlementLoadPromise.then(settlementLoaded);
 	settlementLoadPromise.catch(function(){alert("settlement load failed");});
 }
@@ -97,11 +97,11 @@ function loadLocalization(){
 
 	document.getElementById("languageSelection").value = language;
 
-	var locLoadPromise = loadURL("localization/"+language+".json");
+	var locLoadPromise = loadURL("assets/localization/"+language+".json");
 	locLoadPromise.then(localizationLoaded);
 	locLoadPromise.catch(function(){
 		alert("Localization load failed, defaulting to english");
-		var engLoadPromise = loadURL("localization/en.json");
+		var engLoadPromise = loadURL("assets/localization/en.json");
 		document.getElementById("languageSelection").value = "en";
 		engLoadPromise.then(localizationLoaded);
 		engLoadPromise.catch(function(){alert("English localization load failed. Now you're really hosed!");});
@@ -169,11 +169,11 @@ function switchLanguage(){
 }
 
 function reloadLanguage(langCode){
-	var locLoadPromise = loadURL("localization/"+langCode+".json");
+	var locLoadPromise = loadURL("assets/localization/"+langCode+".json");
 	locLoadPromise.then(updateLanguage);
 	locLoadPromise.catch(function(){
 		alert("Localization load failed, defaulting to english");
-		var engLoadPromise = loadURL("localization/en.json");
+		var engLoadPromise = loadURL("assets/localization/en.json");
 		engLoadPromise.then(updateLanguage);
 		engLoadPromise.catch(function(){alert("English localization load failed. Now you're really hosed!");});
 	});
@@ -1610,7 +1610,7 @@ function getCharacterIndex(character){
 }
 
 function initialize(){
-	var upgradeLoadPromise = loadURL("data/upgrades.json");
+	var upgradeLoadPromise = loadURL("assets/data/upgrades.json");
 	upgradeLoadPromise.then(upgradesLoaded);
 	upgradeLoadPromise.catch(function(){alert("upgrade load failed");});
 }

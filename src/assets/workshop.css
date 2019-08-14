@@ -1,0 +1,379 @@
+body {
+  background-color: rgb(40, 65, 129);
+  color: rgb(231, 189, 66);
+}
+
+h1 {
+  font-family: 'Overseer-Italic';
+}
+
+h2 {
+  font-family: 'Overseer';
+}
+
+#selector {
+  float: left;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#languageSelection {
+  display: inline-block;
+  float: right;
+}
+
+#listInfo {
+  clear: both;
+}
+
+.equipmentToggle {
+  padding: 0.1em;
+  display: inline-block;
+}
+
+.button-force-selector {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.choice span {
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+
+#bos {
+  background-color: rgb(200, 200, 200);
+  color: rgb(75, 75, 75);
+}
+
+#super_mutants {
+  background-color: rgb(200, 200, 200);
+  color: green;
+}
+
+#survivors {
+  background-color: rgb(200, 200, 200);
+  color: rgb(40, 65, 129);
+}
+
+#raiders {
+  background-color: rgb(200, 200, 200);
+  color: rgb(139, 69, 19);
+}
+
+#selector ul {
+  float: left;
+}
+
+#selector ul li {
+  float: left;
+  list-style-type: none;
+  padding: 7px;
+  padding-top: 0px;
+}
+
+#selector ul li :hover {
+  background-color: white;
+}
+
+.add {
+  clear: both;
+}
+
+#addSection ul li {
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+}
+
+#addMenu {
+  width: 100%;
+}
+
+#force {
+  clear: both;
+  width: 100%;
+}
+
+.characterElement {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.carry-section {
+  clear: right;
+  background-color: rgb(75, 75, 75);
+  padding-left: 1em;
+}
+
+.header-section-right {
+  background-color: rgb(75, 75, 75);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.header-section-right div {
+  vertical-align: middle;
+}
+
+.header-section-right button {
+  vertical-align: middle;
+}
+
+.header-section-left {
+  width: 3.7em;
+}
+
+.header-section div {
+  display: inline-block;
+}
+
+.header-section h1 {
+  display: inline-block;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-section button {
+  display: inline-block;
+  margin: 0.1em;
+}
+
+.carry-section .header {
+  display: inline-block;
+}
+
+.carry-section h2 {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.carry-section .consumable {
+  display: block;
+  padding-bottom: 0.3em;
+}
+
+.cost {
+  margin: 0.2em;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.btn-support {
+  float: right;
+  margin-right: 0.5em;
+}
+
+.equipmentOption {
+  margin-bottom: 0.5em;
+}
+
+.equipmentOption span {
+  margin-right: 0.5em;
+}
+
+.btn-left-sm {
+  padding: 3px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  position: relative;
+  top: -1px;
+}
+
+.btn-right-sm {
+  padding: 3px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.consumeableCount {
+  text-align: center;
+}
+
+.btn-equipped {
+  background-color: rgb(40, 65, 129);
+  color: rgb(231, 189, 66);
+}
+
+.btn-unequipped {
+  background-color: rgb(200, 200, 200);
+  color: rgb(75, 75, 75);
+}
+
+input {
+  color: rgb(75, 75, 75);
+}
+
+select {
+  background-color: rgb(200, 200, 200);
+  color: rgb(75, 75, 75);
+}
+
+.btn-background {
+  background-color: rgb(231, 189, 66);
+  color: rgb(75, 75, 75);
+}
+
+.btn-background-off {
+  background-color: rgb(200, 200, 200);
+  color: rgb(40, 65, 129);
+}
+
+.unit-cost {
+  font-family: 'Overseer';
+  font-size: 2em;
+  display: block;
+  text-align: center;
+}
+
+.btn {
+  padding: 0px 6px;
+}
+
+.activeLeaderSection {
+  display: inline-block;
+}
+
+.inactiveLeaderSection {
+  display: inline-block;
+}
+
+.cost-section {
+  margin-left: 3.7em;
+}
+
+.equipment-section {
+  margin-left: 3.7em;
+  background-color: rgb(75, 75, 75);
+  padding: 0.5em;
+  padding-bottom: 1em;
+  border-radius: 20px;
+}
+
+.cost-table {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1em;
+}
+
+.cost-table tr td {
+  text-align: center;
+}
+
+.leaderText {
+  display: block;
+  text-align: center;
+}
+
+.leaderPerkSelection {
+  display: block;
+}
+
+.heroic {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.heroicDescription {
+  display: inline-block;
+  margin: 0.2em;
+  text-align: center;
+}
+
+.blockdisplay {
+  display: block;
+}
+
+.equippedItems {
+  display: block;
+}
+
+.equippedItem {
+  display: block;
+  margin: 0.5em;
+}
+
+.equippedItem span {
+  margin-right: 0.5em;
+}
+
+.equippedItem button {
+  margin-right: 0.5em;
+}
+
+.equippedItem div {
+  display: inline-block;
+}
+
+.modelCount {
+  margin: 0em 1em;
+}
+
+.modelCount span {
+  display: block;
+  text-align: center;
+}
+
+.modelCount div {
+  text-align: center;
+  padding: 0.2em;
+}
+
+.modelCount button {
+  padding: 0.5em 0.3em;
+}
+
+.wear_dropdown {
+}
+
+.carry-section span {
+  margin: 0.5em;
+}
+
+.consumable div {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.consumable span {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.numeric button {
+  display: inline-block;
+  padding: 0.49em 0.5em;
+}
+
+table {
+  margin: 0.25em;
+  padding: 0.25em;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(231, 189, 66);
+}
+
+td {
+  padding: 0.15em 1em;
+}

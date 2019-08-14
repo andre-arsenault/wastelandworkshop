@@ -1,0 +1,7 @@
+{
+  "name": "Wasteland Workshop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
